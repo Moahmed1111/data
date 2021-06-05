@@ -7,7 +7,7 @@ class stack {
 
 private:
 	struct node {
-		t1 date;
+		int date;
 		node* next;
 	};
 	node* top;
@@ -21,7 +21,7 @@ public:
 		return top == NULL;
 	}
 
-	void push(t1 val) {
+	void push(int val) {
 		node* newnode = new node();
 		newnode->date = val;
 		newnode->next = top;
@@ -40,7 +40,7 @@ public:
 
 		del = NULL;
 
-		free(del);
+	         
 
 	}
 
